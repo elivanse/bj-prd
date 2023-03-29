@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Secretaría de Biblioteca y Jurisprudencia</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+        rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .hovereffect {
+            width: 100%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
+
+        .hovereffect .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .hovereffect:hover .overlay {
+            background-color: rgba(170, 170, 170, 0.4);
+        }
+
+        .hovereffect h2,
+        .hovereffect img {
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .hovereffect img {
+            display: block;
+            position: relative;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .hovereffect:hover img {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .hovereffect h2 {
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            font-size: 17px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hovereffect a.info {
+            display: inline-block;
+            text-decoration: none;
+            padding: 7px 14px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 1px solid #fff;
+            margin: 50px 0 0 0;
+            background-color: transparent;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5);
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            font-weight: normal;
+            height: 85%;
+            width: 85%;
+            position: absolute;
+            top: -20%;
+            left: 8%;
+            padding: 70px;
+        }
+
+        .hovereffect:hover a.info {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+
+    <!-- nuevo carrusel-->
+    <style>
+        .b-0 {
+            bottom: 0;
+        }
+
+        .bg-shadow {
+            background: rgba(76, 76, 76, 0);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
+            background: linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0);
+        }
+
+        .top-indicator {
+            right: 0;
+            top: 1rem;
+            bottom: inherit;
+            left: inherit;
+            margin-right: 1rem;
+        }
+
+        .overflow {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .zoom img {
+            transition: all 0.2s linear;
+        }
+
+        .zoom:hover img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center bg-secondary">
+        <div class="container d-flex justify-content-between ">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo-biblioteca.png" width="129px" heigth="43px"
+                        class="img-fluid"></a>
+            </div>
+
+
+
+
+
+
+            <!--<nav id="navbar" class="navbar background-color: #e3f2fd;">-->
+            <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-secondary">
+                <ul>
+                    <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+                    <li class="dropdown"><a href="#">Biblioteca<i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="http://152.169.108.62/" target="_blank">Catálogo Bibliográfico</a></li>
+                            <li><a href="assets/dc/cpp.html">Codigo Procesal Penal de Neuquén - Edición Propia</a></li>
+                            <li><a href="https://informacionlegal.com.ar/maf/app/authentication/signon?sp=STJN-1"
+                                    target="_blank">La Ley</a></li>
+                            <li><a href="https://proview.thomsonreuters.com/library.html?sponsor=STJN-2"
+                                    target="_blank">Proview</a></li>
+                            <li><a class="nav-link scrollto" href="#tutoriales">Tutoriales|Reglamentos</a></li>
+                            <li><a class="nav-link scrollto" href="#faq">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Jurisprudencia<i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="http://juriscivil.jusneuquen.gov.ar/" target="_blank">Fuero Civil y
+                                    Comercial</a></li>
+                            <li><a href="http://152.169.108.62:81" target="_blank">Penal</a></li>
+                            <li><a class="nav-link scrollto" href="#bol">Boletines</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+    <main id="main">
+
+
+
+
+
+
+
+
+
+
+        <section class="bg-light pt-5 pb-5 shadow-sm">
+            <div class="container">
+
+           
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="well-left">
+                            <div class="single-well">
+                                <a href="#">
+                                    <div class="col-12">
+                                        <hr>
+                                        <h3 class="text-uppercase border-bottom mb-4">Código de Procedimiento Penal del Neuquén</h3>
+                                   <h5>Búsqueda por Artículo</h5></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+
+                            <a class="list-group-item list-group-item-action active" id="titlibroi"
+                                data-bs-toggle="list" href="#lstlibroi" role="tab" aria-controls="lstlibroi">Libro I
+                                Principios Generales y Lineamientos</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibroii" data-bs-toggle="list"
+                                href="#lstlibroii" role="tab" aria-controls="lstlibroii">Libro II Admisión del caso</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibroiii" data-bs-toggle="list"
+                                href="#lstlibroiii" role="tab" aria-controls="lstlibroiii">Libro III Etapa Intermedia.
+                                Control del Mérito de la Acusación</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibroiv" data-bs-toggle="list"
+                                href="#lstlibroiv" role="tab" aria-controls="lstlibroiv">Libro IV Juicio Oral y
+                                Público</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibrov" data-bs-toggle="list"
+                                href="#lstlibrov" role="tab" aria-controls="lstlibrov">Libro V Control de las Decisiones
+                                Judiciales</a>
+
+
+
+                        </div>
+                    </div>
+                    </div>
+                
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- Boletines de Jurisprudencia Seccion -->
+
+        <section id="bol" class="faq section-bg">
+            <div class="container">
+                <hr>`
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                            <h2>Código Procesal Penal del Neuquén</h2>
+                            <img src="assets/img/cpp-libro.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+
+                            <a class="list-group-item list-group-item-action active" id="titlibroi"
+                                data-bs-toggle="list" href="#lstlibroi" role="tab" aria-controls="lstlibroi">Libro I
+                                Principios Generales y Lineamientos</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibroii" data-bs-toggle="list"
+                                href="#lstlibroii" role="tab" aria-controls="lstlibroii">Libro II Admisión del caso</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibroiii" data-bs-toggle="list"
+                                href="#lstlibroiii" role="tab" aria-controls="lstlibroiii">Libro III Etapa Intermedia.
+                                Control del Mérito de la Acusación</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibroiv" data-bs-toggle="list"
+                                href="#lstlibroiv" role="tab" aria-controls="lstlibroiv">Libro IV Juicio Oral y
+                                Público</a>
+
+                            <a class="list-group-item list-group-item-action" id="titlibrov" data-bs-toggle="list"
+                                href="#lstlibrov" role="tab" aria-controls="lstlibrov">Libro V Control de las Decisiones
+                                Judiciales</a>
+
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+
+
+
+
+
+                            <!-- 2022 -->
+
+                            <div class="tab-pane fade show active" id="titlibroi" role="tabpanel"
+                                aria-labelledby="lstlibroi">
+                                <h5>TÍTULO I. PRINCIPIOS GENERALES</h5>
+                                <div class="list-group">
+                                    <a href="·"
+                                        class="list-group-item list-group-item-action" target="_blank">Capítulo 1: Declaración y Principios (Artículos 1 a 23)</a>
+                                   
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <!-- 2021 -->
+
+                            <div class="tab-pane fade show active" id="titlibroii" role="tabpanel"
+                                aria-labelledby="lstlibroii">
+                                <h5>TÍTULO II. JURISDICCIÓN, COMPETENCIA Y SUJETOS PROCESALES                                </h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N1_2021.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Capítulo 1: Jurisdicción y Competencia (Artículos 24 a 30)</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N2_2021.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Capítulo 2: Tribunales Competentes (Artículos 31 a 39)</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N3_2021.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Capítulo 3: Procedimientos para la Excusación y la Recusación (Artículos 40 a 42)</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N4_2021.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Capítulo 4:</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N5_2021.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Capítulo 5:</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N6_2021.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 6, Noviembre -
+                                        Diciembre</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <!-- 2020 -->
+
+
+                            <div class="tab-pane fade show " id="list-2020" role="tabpanel"
+                                aria-labelledby="list-2020-list">
+                                <h5>Boletines</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N1_2020.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 1, Enero -
+                                        Febrero</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N2_2020.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 2, Marzo -
+                                        Abril</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N3_2020.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 3, Mayo -
+                                        Junio</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N4_2020.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 4, Julio -
+                                        Agosto</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N5_2020.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 5, Septiembre
+                                        - Octubre</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N6_2020.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 6, Noviembre
+                                        - Diciembre</a>
+                                </div>
+                            </div>
+
+
+                            <!-- 2019 -->
+
+
+                            <div class="tab-pane fade show " id="list-2019" role="tabpanel"
+                                aria-labelledby="list-2019-list">
+                                <h5>Boletines</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N1_2019.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 1, Enero -
+                                        Febrero</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N2_2019.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 2, Marzo -
+                                        Abril</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N3_2019.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 3, Mayo -
+                                        Junio</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N4_2019.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 4, Julio -
+                                        Agosto</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N5_2019.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 5, Septiembre
+                                        - Octubre</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N6_2019.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 6, Noviembre
+                                        - Diciembre</a>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- 2018 -->
+
+
+                            <div class="tab-pane fade show " id="list-2018" role="tabpanel"
+                                aria-labelledby="list-2018-list">
+                                <h5>Boletines</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N1_2018.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 1, Enero -
+                                        Febrero</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N2_2018.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 2, Marzo -
+                                        Abril</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N3_2018.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 3, Mayo -
+                                        Junio</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N4_2018.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 4, Julio -
+                                        Agosto</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N5_2018.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 5, Septiembre
+                                        - Octubre</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N6_2018.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 6, Noviembre
+                                        - Diciembre</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- 2017 -->
+
+
+                            <div class="tab-pane fade show " id="list-2017" role="tabpanel"
+                                aria-labelledby="list-2017-list">
+                                <h5>Boletines</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N1-2017.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 1, Enero -
+                                        Febrero</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N2-2017.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 2, Marzo -
+                                        Abril</a>
+                                    <a href="http://200.70.33.130/imag:wes2/Biblioteca/BoletinSByJ_N3-2017.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 3, Mayo -
+                                        Junio</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N4-2017.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 4, Julio -
+                                        Agosto</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N5-2017.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 5, Septiembre
+                                        - Octubre</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N6-2017.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 6, Noviembre
+                                        - Diciembre</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- 2016 -->
+
+
+                            <div class="tab-pane fade show " id="list-2016" role="tabpanel"
+                                aria-labelledby="list-2016-list">
+                                <h5>Boletines</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N1-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 1, Enero -
+                                        Febrero</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N2-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 2, Marzo -
+                                        Abril</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N3-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 3, Mayo -
+                                        Junio</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N4-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 4, Julio -
+                                        Agosto</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N5-2016.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 5, Septiembre
+                                        - Octubre</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N6-2016.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 6, Noviembre
+                                        - Diciembre</a>
+                                </div>
+                                <h5>Digestos de Jurisprudencia</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaCivilTSJ-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Civil</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaPenalTSJ-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Penal</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaProcAdmTSJ-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Procesal
+                                        Administrativa</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaI-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        I Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaII-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        II Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaIII-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        III Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCamaraPcialCCLMyF-salasIyII-2016.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Unica
+                                        Provincial en lo CCLMyF
+                                        - Salas I y
+                                        II</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- 2015 -->
+
+
+                            <div class="tab-pane fade show " id="list-2015" role="tabpanel"
+                                aria-labelledby="list-2015-list">
+                                <h5>Boletines</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N1-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 1, Enero -
+                                        Febrero</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N2-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 2, Marzo -
+                                        Abril</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N3-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 3, Mayo -
+                                        Junio</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N4-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 4, Julio -
+                                        Agosto</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N5-2015.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 5, Septiembre
+                                        - Octubre</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinSByJ_N6-2015.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 6, Noviembre
+                                        - Diciembre</a>
+                                </div>
+                                <h5>Digestos de Jurisprudencia</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaCivilTSJ-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Civil</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaPenalTSJ-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Penal</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaProcAdmTSJ-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Procesal
+                                        Administrativa</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaI-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        I Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaII-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        II Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaIII-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        III Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCamaraPcialCCLMyF-salasIyII-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Unica
+                                        Provincial en lo CCLMyF
+                                        - Salas I y
+                                        II</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaTI-2015.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Tribunal de
+                                        Impugnacion</a>
+                                </div>
+                            </div>
+
+
+                            <!-- 2014 -->
+
+                            <div class="tab-pane fade show " id="list-2014" role="tabpanel"
+                                aria-labelledby="list-2014-list">
+                                <h5>Boletines</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinN1_2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 1, Enero -
+                                        Febrero</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinN2_2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 2, Marzo -
+                                        Abril</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinN3_2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 3, Mayo -
+                                        Junio</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinN4_2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">N° 4, Julio -
+                                        Agosto</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinN4-Anexo_2014.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 4, Julio -
+                                        Agosto - ANEXO</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinN5_2014.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 5, Septiembre
+                                        - Octubre</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/BoletinN6_2014.pdf"
+                                        class="list-group-item list-group-item-action " target="_blank">N° 6, Noviembre
+                                        - Diciembre</a>
+                                </div>
+                                <h5>Digestos de Jurisprudencia</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaNovedosa-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Jurisprudencia
+                                        Novedosa</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaCivilTSJ-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Civil</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaPenalTSJ-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Penal</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaSalaProcAdmTSJ-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Procesal
+                                        Administrativa</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaI-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        I Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaII-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        II Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCCSalaIII-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        III Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaCamaraPcialCCLMyF-salasIyII-2014.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Unica
+                                        Provincial en lo CCLMyF
+                                        - Salas I y
+                                        II</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/DigestoJurisprudenciaTribunalImpugnacion.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Tribunal de
+                                        Impugnacion</a>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- 2013 -->
+
+                            <div class="tab-pane fade show " id="list-2013" role="tabpanel"
+                                aria-labelledby="list-2013-list">
+                                <h5>Digestos de Jurisprudencia</h5>
+                                <div class="list-group">
+                                    <a href="http://200.70.33.130/images2/Biblioteca/JurispNovedosa2013.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Jurisprudencia
+                                        Novedosa</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/TSJSalaCivil-2013.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Civil</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/TSJSalaPenal-2013.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Penal</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/TSJSalaProcAdm-2013.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">TSJ - Sala
+                                        Procesal
+                                        Administrativa</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/CCivNqNSalaI.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        I Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/CCivNqNSalaII.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        II Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/CCivNqNSalaIII.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Camara Civil Sala
+                                        III Neuquen</a>
+                                    <a href="http://200.70.33.130/images2/Biblioteca/OrganismosVarios2013.pdf"
+                                        class="list-group-item list-group-item-action" target="_blank">Organismos
+                                        Varios</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- End Boletines de Jurisprudencia -->
+
+    
+
+
+        <!-- ======= Contacto Section ======= -->
+
+        <div id="contact" class="contact-area">
+            <div class="contact-inner area-padding">
+                <div class="contact-overly"></div>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-headline text-center">
+                                <h2>Contáctenos</h2>
+
+
+
+                                <!-- Histats.com  (div with counter) -->
+                                <div id="histats_counter"></div>
+                                <!-- Histats.com  START  (aync)-->
+                                <script type="text/javascript">var _Hasync = _Hasync || [];
+                                    _Hasync.push(['Histats.start', '1,4689352,4,1031,150,25,00001000']);
+                                    _Hasync.push(['Histats.fasi', '1']);
+                                    _Hasync.push(['Histats.track_hits', '']);
+                                    (function () {
+                                        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+                                        hs.src = ('//s10.histats.com/js15_as.js');
+                                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+                                    })();</script>
+                                <noscript><a href="/" target="_blank"><img
+                                            src="//sstatic1.histats.com/0.gif?4689352&101" alt="visitas"
+                                            border="0"></a></noscript>
+                                <!-- Histats.com  END  -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <!-- Start contact icon column -->
+
+                        <div class="col-md-4">
+                            <div class="contact-icon text-center">
+                                <div class="single-icon">
+                                    <i class="bi bi-phone"></i>
+                                    <p>
+                                        +54(0299)5255253<br>
+                                        <span>Lunes - Viernes ( 8am - 14pm ) </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-icon text-center">
+                                <div class="single-icon">
+                                    <i class="bi bi-envelope"></i>
+                                    <p>
+                                        Email: biblioteca.neuquen@jusneuquen.gov.ar<br>
+                                    </p>
+                                    <i class="bi bi-twitter"></i>
+                                    <p>
+                                        <a href="https://twitter.com/bibjurnqn">@bibjurnqn</a><br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-icon text-center">
+                                <div class="single-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <p> Leloir 686<br>
+                                        <span>Neuquén Capital 8300, Argentina</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-sm-6 col-md-2">
+                            <img src="assets/img/LogoPJ2.gif" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                            <small text-center>Diseño y Desarrollo - Secretaría de Biblioteca y Jurisprudencia
+                                2022</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- End Contacto Section -->
+
+
+    </main>
+
+    <!-- End #main -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

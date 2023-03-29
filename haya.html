@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+Content-Length: 50519
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Secretaría de Biblioteca y Jurisprudencia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+    rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .hovereffect {
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default;
+    }
+
+    .hovereffect .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .hovereffect:hover .overlay {
+      background-color: rgba(170, 170, 170, 0.4);
+    }
+
+    .hovereffect h2,
+    .hovereffect img {
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .hovereffect img {
+      display: block;
+      position: relative;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    .hovereffect:hover img {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .hovereffect h2 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hovereffect a.info {
+      display: inline-block;
+      text-decoration: none;
+      padding: 7px 14px;
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid #fff;
+      margin: 50px 0 0 0;
+      background-color: transparent;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      font-weight: normal;
+      height: 85%;
+      width: 85%;
+      position: absolute;
+      top: -20%;
+      left: 8%;
+      padding: 70px;
+    }
+
+    .hovereffect:hover a.info {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+
+  <!-- nuevo carrusel-->
+  <style>
+    .b-0 {
+      bottom: 0;
+    }
+
+    .bg-shadow {
+      background: rgba(76, 76, 76, 0);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
+      background: linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0);
+    }
+
+    .top-indicator {
+      right: 0;
+      top: 1rem;
+      bottom: inherit;
+      left: inherit;
+      margin-right: 1rem;
+    }
+
+    .overflow {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .zoom img {
+      transition: all 0.2s linear;
+    }
+
+    .zoom:hover img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center bg-secondary">
+    <div class="container d-flex justify-content-between ">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo-biblioteca.png" width="129px" heigth="43px"
+            class="img-fluid"></a>
+      </div>
+
+
+
+
+
+
+      <!--<nav id="navbar" class="navbar background-color: #e3f2fd;">-->
+      <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <ul>
+          <ul>
+            <li><a href="http://catalogo.jusneuquen.gov.ar/">Catálogo Bibliográfico</a></li>
+            <li><a href="https://informacionlegal.com.ar/maf/app/authentication/signon?sp=STJN-1" target="_blank">La
+                Ley</a></li>
+            <li><a href="https://proview.thomsonreuters.com/library.html?sponsor=STJN-2" target="_blank">Proview</a>
+            </li>
+          </ul>
+          </li>
+          <li class="dropdown"><a href="#">Jurisprudencia<i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="biblioteca.jusneuquen.gov.ar/haya.html" target="_blank">Sentencias de la Haya</a></li>
+              <li><a href="http://juriscivil.jusneuquen.gov.ar/" target="_blank">Fuero Civil y
+                  Comercial</a></li>
+              <li><a href="http://juriscivil.jusneuquen.gov.ar:8000" target="_blank">Penal</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+
+
+
+  <!-- Boletines de Jurisprudencia Seccion -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <h2>Sentencias de La Haya</h2>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                COOPERATIVA DE SERVICIOS PUBLICOS PLOTTIER LIMITADA C/ URRUTIA NUÑEZ HUGO ALEJANDRO S/ SUMARISIMO ART.
+                498 CPCC
+              </h5>
+              <p class="card-text">
+                Deberá tramitar por el andarivel de la acción meramente declarativa –art. 322 del CPCyC- la
+                pretensión iniciada a fin de que el Cuerpo Médico Forense dictamine si el accionado se encuentra en
+                condiciones de presentarse a trabajar o si padece el diagnóstico que invoca y obsta la prestación
+                efectiva de tareas.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Sentencia Completa
+
+              </a>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                MOREBA S. A. C/ ELECTRIFICADORA DEL VALLE S.A. S/ COBRO EJECUTIVO
+              </h5>
+              <p class="card-text">
+                La instancia de grado deberá proveer la presentación que en conjunto realizaron las partes en donde la
+                actora desiste de la acción y del derecho en el proceso, prestando por su parte la demandada conformidad
+                y asumiendo el pago de las costas. Ello es así, pues al respecto esta Sala sostuvo: “[…]no advierto que,
+                la presentación formulada conjuntamente por las partes pueda afectar o poner en riesgo el trámite del
+                acuerdo preventivo extrajudicial, en tanto no se reconoce derecho alguno al actor”. “Luego, si se tiene
+                en cuenta que, no existiendo fuero de...
+
+              </p>
+              <a href="#" class="btn btn-primary">
+                Sentencia Completa
+
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Boletines de Jurisprudencia -->
+
+  <main id="main">
+
+    <!-- ======= Contacto Section ======= -->
+
+    <div id="contact" class="contact-area">
+      <div class="contact-inner area-padding">
+        <div class="contact-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h3>Contáctenos</h3>
+
+
+
+                <!-- Histats.com  (div with counter) -->
+                <div id="histats_counter"></div>
+                <!-- Histats.com  START  (aync)-->
+                <script type="text/javascript">var _Hasync = _Hasync || [];
+                  _Hasync.push(['Histats.start', '1,4689352,4,1031,150,25,00001000']);
+                  _Hasync.push(['Histats.fasi', '1']);
+                  _Hasync.push(['Histats.track_hits', '']);
+                  (function () {
+                    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+                    hs.src = ('//s10.histats.com/js15_as.js');
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+                  })();</script>
+                <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4689352&101" alt="visitas"
+                      border="0"></a></noscript>
+                <!-- Histats.com  END  -->
+
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <!-- Start contact icon column -->
+
+            <div class="col-md-4">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="bi bi-phone"></i>
+                  <p>
+                    +54(0299)5255253<br>
+                    <span>Lunes - Viernes ( 8am - 14pm ) </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="bi bi-envelope"></i>
+                  <p>
+                    Email: biblioteca.neuquen@jusneuquen.gov.ar<br>
+                  </p>
+                  <i class="bi bi-twitter"></i>
+                  <p>
+                    <a href="https://twitter.com/bibjurnqn">@bibjurnqn</a><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="bi bi-geo-alt"></i>
+                  <p> Leloir 686<br>
+                    <span>Neuquén Capital 8300, Argentina</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-sm-6 col-md-2">
+              <img src="assets/img/LogoPJ2.gif" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <small text-center>Diseño y Desarrollo - Secretaría de Biblioteca y Jurisprudencia
+                2022</small>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- End Contacto Section -->
+
+
+  </main>
+
+  <!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
